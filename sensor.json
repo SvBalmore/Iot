@@ -1,0 +1,139 @@
+{
+  "id" : "66e8fbd030c49e0007b832b5",
+  "modified" : 1726546552,
+  "name" : "sensor",
+  "dataDefinition" : {
+    "id" : "66e8fa6730c49e0007b832b4",
+    "modified" : 1726545523,
+    "name" : "train",
+    "dataset" : {
+      "id" : "66e8fa2430c49e0007b832b3",
+      "modified" : 1726544420,
+      "name" : "train.csv",
+      "type" : "csv",
+      "url" : "http://minio:9000",
+      "bucket" : "datasets",
+      "objectKey" : "train.csv",
+      "accessKey" : "58CZ5TR5PZV5RX14Q6I8",
+      "secretKey" : "JdY2rppyyCK1cEJ+tH8Cy7WhPAqkp1to2y/e2J4R"
+    },
+    "schema" : {
+      "metadata" : {
+        "type" : "csv"
+      },
+      "type" : "object",
+      "properties" : {
+        "1" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "integer",
+            "position" : "1",
+            "name" : "column_1",
+            "description" : ""
+          }
+        },
+        "2" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "integer",
+            "position" : "2",
+            "name" : "column_2",
+            "description" : ""
+          }
+        },
+        "3" : {
+          "type" : "string",
+          "metadata" : {
+            "position" : "3",
+            "name" : "column_3",
+            "description" : ""
+          }
+        },
+        "4" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "double",
+            "position" : "4",
+            "name" : "column_4",
+            "description" : ""
+          }
+        }
+      },
+      "schemaKey" : "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "timer" : {
+    "type" : "interval",
+    "metric" : "seconds",
+    "value" : 5
+  },
+  "ticksNumber" : 0,
+  "isReplayLooped" : false,
+  "devices" : [ ],
+  "generator" : {
+    "type" : "schema_based",
+    "schema" : {
+      "metadata" : {
+        "type" : "csv"
+      },
+      "type" : "object",
+      "properties" : {
+        "1" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "integer",
+            "position" : "1",
+            "name" : "column_1",
+            "description" : ""
+          },
+          "rule" : {
+            "type" : "as_is"
+          }
+        },
+        "2" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "integer",
+            "position" : "2",
+            "name" : "column_2",
+            "description" : ""
+          },
+          "rule" : {
+            "type" : "as_is"
+          }
+        },
+        "3" : {
+          "type" : "string",
+          "metadata" : {
+            "position" : "3",
+            "name" : "column_3",
+            "description" : ""
+          },
+          "rule" : {
+            "type" : "as_is"
+          }
+        },
+        "4" : {
+          "type" : "number",
+          "metadata" : {
+            "type" : "double",
+            "position" : "4",
+            "name" : "column_4",
+            "description" : ""
+          },
+          "rule" : {
+            "type" : "as_is"
+          }
+        }
+      },
+      "schemaKey" : "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "targetSystem" : {
+    "id" : "5a4223da85b4b900050e7474",
+    "modified" : 1726198643,
+    "name" : "Dummy",
+    "type" : "dummy"
+  },
+  "replayLooped" : false
+}
